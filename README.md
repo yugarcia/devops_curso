@@ -1,4 +1,4 @@
-# Repository Name
+# DevOps Bootcamp 63703
 
 Welcome to the DevOps Bootcamp 63703! This repository contains folders for each meeting of the course. Each folder represents a specific session and contains relevant materials and code.
 
