@@ -16,10 +16,12 @@ Follow these steps to download and set up the project using Ansible:
 
    ```shell
     https://github.com/edgaregonzalez/devops-63703.git
+
 2. move to the right folder:
 
    ```shell
     cd Clase3
+
 2. Run the playbook:
 
    ```shell
