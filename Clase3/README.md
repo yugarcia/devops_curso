@@ -14,8 +14,9 @@ Follow these steps to download and set up the project using Ansible:
 
 1. Clone the repository:
 
-   ```shell
-    https://github.com/edgaregonzalez/devops-63703.git
+   ```bash
+    git clone https://github.com/edgaregonzalez/devops-63703.git
+   ```
 
 2. move to the right folder:
 
