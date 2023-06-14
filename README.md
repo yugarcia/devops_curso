@@ -20,9 +20,10 @@ The repository is organized into folders, with each folder representing a meetin
 Follow these steps to access the materials for a specific session:
 
 1. Clone the repository to your local machine:
-
+   
    ```bash
    https://github.com/edgaregonzalez/devops-63703.git
+   ```
 2. Move to the folder for the session you want to access:
 
    ```bash
