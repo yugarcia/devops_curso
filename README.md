@@ -37,18 +37,18 @@ You can contribute to this project by forking the repository, making your change
 2. Create your feature branch:
     
     ```bash
-     git checkout -b feature/AmazingFeature
-     ```
+    git checkout -b feature/AmazingFeature
+    ```
 3. Make your desired changes and commit them:
-        
-        ```bash
-        git commit -m 'Add some AmazingFeature'
-        ```
+    
+    ```bash
+    git commit -m 'Add some AmazingFeature'
+    ```
 4. Push your changes to your forked repository:
-        
-        ```bash
-        git push origin feature/AmazingFeature
-        ```
+    
+    ```bash
+    git push origin feature/AmazingFeature
+    ```
 5. Open a pull request to the main repository.
 
 ## License
