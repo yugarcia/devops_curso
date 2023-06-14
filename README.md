@@ -28,6 +28,7 @@ Follow these steps to access the materials for a specific session:
 
    ```bash
    cd Clase3
+   ```
 ## Contribute
 
 You can contribute to this project by forking the repository, making your changes and creating a pull request.
@@ -37,17 +38,17 @@ You can contribute to this project by forking the repository, making your change
     
     ```shell
      git checkout -b feature/AmazingFeature
-
+     ```
 3. Make your desired changes and commit them:
         
         ```shell
         git commit -m 'Add some AmazingFeature'
-
+        ```
 4. Push your changes to your forked repository:
         
         ```shell
         git push origin feature/AmazingFeature
-
+        ```
 5. Open a pull request to the main repository.
 
 ## License
