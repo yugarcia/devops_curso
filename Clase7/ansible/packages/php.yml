@@ -1,0 +1,4 @@
+- name: install php software
+  apt:
+    name: php
+    state: latest
