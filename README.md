@@ -13,7 +13,8 @@ To use the materials and code in this repository, ensure that you have the follo
 The repository is organized into folders, with each folder representing a meeting or session of the course. Inside each folder, you will find:
 
 - [2023-06-09 Meeting 4 - Ansible as a Configuration Management Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase3)
-- [2023-06-14 Meeting 5 - Vangrant as a Virtualization Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase4)
+- [2023-06-14 Meeting 5 - Vangrant as a Virtualization Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase5)
+- [2023-06-17 Meeting 6 - Vangrant as a Virtualization Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase6)
 
 ## Usage
 
