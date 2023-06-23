@@ -15,6 +15,8 @@ The repository is organized into folders, with each folder representing a meetin
 - [2023-06-09 Meeting 4 - Ansible as a Configuration Management Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase3)
 - [2023-06-14 Meeting 5 - Vangrant as a Virtualization Tool](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase5)
 - [2023-06-17 Meeting 6 - Comandos utiles linux](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase6)
+- [2023-06-21 Meeting 7 - Modularizacion con Ansible](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase7)
+- [2023-06-23 Meeting 8 - Intro Bash Scripting](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase8)
 
 ## Usage
 
