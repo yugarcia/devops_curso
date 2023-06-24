@@ -1,0 +1,3 @@
+ Hacer el break mas largo. 
+Traer mas contenido de docker
+Usar windows de una mejor forma
