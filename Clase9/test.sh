@@ -1,0 +1,1 @@
+./script1 -n ezequiel -a 40
