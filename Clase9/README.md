@@ -7,9 +7,11 @@
 ```
 ## uso de jq y curl para llamados a una API REST
 ```console
-**./script2**
+./script2
 ```
 
 ## links de interes
-* [jq playgrount](https://jqplay.org/)
-* [jq manual](https://stedolan.github.io/jq/manual/)
+* [Sitio jq playgrount](https://jqplay.org/)
+* [Manual oficial de jq](https://stedolan.github.io/jq/manual/)
+* [Tutorial de curl](https://curl.se/docs/manual.html)
+* [Blog recomendado sobre arquitectura de software](https://martinfowler.com/)
