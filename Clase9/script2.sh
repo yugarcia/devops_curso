@@ -1,3 +1,4 @@
+#!/bin/bash
 # script para llamar metodos de la API de github
 # usa autenticacion.
 
