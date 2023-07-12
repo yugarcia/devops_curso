@@ -1,0 +1,4 @@
+- name: install admin tools
+  apt:
+    name: curl
+    state: present

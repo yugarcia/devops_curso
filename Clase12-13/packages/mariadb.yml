@@ -1,0 +1,8 @@
+- name: Update apt cache  # Actualiza el cache de apt
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+- name: Install mariadb-server
+  apt:
+    name: ['mariadb-server', 'mariadb-client']
+    state: present

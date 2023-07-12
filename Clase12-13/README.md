@@ -13,7 +13,7 @@ sudo apt install ./mysql-apt-config_0.8.25-1_all.deb
 ### actualizar los repositorios
 
 sudo apt update
-sudo apt install mysql-server
+sudo apt install mysql-server mysql-client
 
 ### verificar el servicio
 

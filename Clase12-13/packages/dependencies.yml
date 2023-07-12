@@ -1,0 +1,5 @@
+# python stuff
+- name: install python
+  apt:
+    name: [ "python3-pymysql" ]
+    state: present
