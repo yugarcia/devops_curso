@@ -16,6 +16,10 @@
       become: yes
       ansible.builtin.import_tasks: packages/apache.yml
       tags: [install-apache]
+    - name: apache security
+      become: yes
+      ansible.builtin.import_tasks: packages/apache-security.yml
+      tags: [apache-security]
     - name: install php-extensions
       become: yes
       ansible.builtin.import_tasks: packages/php-extensions.yml
@@ -34,3 +38,11 @@
         _mysql_wp_password: "{{ mysql_wp_password }}"
       ansible.builtin.import_tasks: packages/app-db-setup.yml
       tags: [app-db-user]
+    - name: configuracion sitio de apache
+      become: yes
+      vars:
+        _http_port: "{{ http_port }}"
+        _server_name: "{{ server_name }}"
+        _server_admin: "{{ server_admin }}"
+      ansible.builtin.import_tasks: packages/config-apache-site.yml
+      tags: [config-apache-site]

@@ -1,0 +1,19 @@
+- name: create site directory
+  file:
+    path: /var/www/{{ _server_name }}/public_html
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: '0755'
+- name: create wordpress apache site
+  template:
+    src: config/apache-site.conf.j2
+    dest: /etc/apache2/sites-available/{{ _server_name }}.conf
+    owner: root
+    group: root
+    mode: '0644'
+
+# [tarea] invenstigar el comando para checkear la configuracion de apache
+
+- name: enable site
+  ansible.builtin.command: a2ensite {{ _server_name }}

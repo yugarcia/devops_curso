@@ -4,3 +4,8 @@ mysql_admin_password: "educacionit2023."
 mysql_wp_db: "wordpress"
 mysql_wp_user: "wordpress"
 mysql_wp_password: "educacionit2023."
+
+#Apache Settings
+http_port: 80
+server_name: "wordpress.educacionit.local"
+server_admin: "webmaster@wordpress.educacionit.local"

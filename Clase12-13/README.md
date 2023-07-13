@@ -22,3 +22,9 @@ sudo service mysql status
 ### ejecutar el proceso de seguridad
 
 sudo mysql_secure_installation
+
+### crear usuario de base de datos admin
+
+CREATE USER 'adminuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'adminuser'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
