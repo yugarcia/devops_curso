@@ -3,6 +3,7 @@
   gather_facts: True
   vars_files:
     - vars/wordpress.yml
+    - vars/mysql.yml
   tasks:
     - name: install dependencies
       become: yes
@@ -46,3 +47,12 @@
         _server_admin: "{{ server_admin }}"
       ansible.builtin.import_tasks: packages/config-apache-site.yml
       tags: [config-apache-site]
+    - name: wordpress install
+      become: yes
+      vars:
+        _server_name: "{{ server_name }}"
+        _mysql_wp_db: "{{ mysql_wp_db }}"
+        _mysql_wp_user: "{{ mysql_wp_user }}"
+        _mysql_wp_password: "{{ mysql_wp_password }}"
+      ansible.builtin.import_tasks: packages/install-wordpress.yml
+      tags: [wordpress-install]

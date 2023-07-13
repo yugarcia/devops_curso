@@ -1,0 +1,17 @@
+# hacer que la extraccion se realice en la raiz del sitio y no dentro de la carpeta wordpress
+- name: Descargar wordpress
+  unarchive:
+    src: https://wordpress.org/latest.tar.gz
+    dest: /var/www/{{ _server_name }}/public_html
+    remote_src: yes
+    owner: www-data
+    group: www-data
+    mode: 0755
+
+- name: crear arhivo de configuracion wordpress
+  template:
+    src: config/wp-config.php.j2
+    dest: /var/www/{{ _server_name }}/public_html/wordpress/wp-config.php
+    owner: www-data
+    group: www-data
+    mode: 0644
