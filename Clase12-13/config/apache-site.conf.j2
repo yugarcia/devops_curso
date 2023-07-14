@@ -1,10 +1,10 @@
 <VirtualHost *:{{ _http_port }}>
     ServerAdmin {{ _server_admin }}
-    ServerName www.{{ _server_name }}
+    ServerName {{ _server_name }}
     ServerAlias {{ _server_name }}
     DocumentRoot /var/www/{{ _server_name }}/public_html
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/requests.log combined
+    ErrorLog ${APACHE_LOG_DIR}/{{ _server_name }}_error.log
+    CustomLog ${APACHE_LOG_DIR}/{{ _server_name }}_access.log combined
     <Directory /var/www/{{ _server_name }}/public_html>
         Options -Indexes
     </Directory>

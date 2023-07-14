@@ -30,6 +30,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'adminuser'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
 ### [resolver] que no esta funcionando.
-* el sitio de wordpress no responde con la pagina de inicio esperada.
-* es necesario lograr que el contenido del comprimido de wordpress se descomprima en el directorio /var/www/sitio/public_html.
-* no se logra deshabilitar el sitio default (mejora de seguridad)
+* (ok) el sitio de wordpress no responde con la pagina de inicio esperada.
+* (ok) es necesario lograr que el contenido del comprimido de wordpress se descomprima en el directorio /var/www/sitio/public_html.
+* (ok) no se logra deshabilitar el sitio default (mejora de seguridad).

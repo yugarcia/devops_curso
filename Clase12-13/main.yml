@@ -3,7 +3,6 @@
   gather_facts: True
   vars_files:
     - vars/wordpress.yml
-    - vars/mysql.yml
   tasks:
     - name: install dependencies
       become: yes
