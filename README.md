@@ -17,7 +17,10 @@ The repository is organized into folders, with each folder representing a meetin
 - [2023-06-17 Meeting 6 - Comandos utiles linux](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase6)
 - [2023-06-21 Meeting 7 - Modularizacion con Ansible](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase7)
 - [2023-06-23 Meeting 8 - Intro Bash Scripting - Variables y bucles](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase8)
-- [2023-06-28 Meeting 8 - Intro Bash Scripting - Funciones](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase9)
+- [2023-06-30 Meeting 9 - Intro Bash Scripting - Funciones](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase9)
+- [2023-06-28 Meeting 10 - Intro Bash Scripting - Funciones](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase10)
+- [2023-05-07 Meeting 11 - Instalacion y configuracion de base de datos](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase11)
+- [2023-05-07 Meeting 12-13 - Instalacion y configuracion de wordpress con ansible](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase12-13)
 
 ## Usage
 
