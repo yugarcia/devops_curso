@@ -31,5 +31,5 @@ FLUSH PRIVILEGES;
 
 ### [resolver] que no esta funcionando.
 * (ok) el sitio de wordpress no responde con la pagina de inicio esperada.
-* (ok) es necesario lograr que el contenido del comprimido de wordpress se descomprima en el directorio /var/www/sitio/public_html.
+* (ok) es necesario lograr que el contenido del zip de wordpress se descomprima en el directorio /var/www/sitio/public_html.
 * (ok) no se logra deshabilitar el sitio default (mejora de seguridad).
