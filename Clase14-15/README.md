@@ -113,3 +113,99 @@ sudo systemctl start prometheus
 sudo systemctl enable prometheus
 
 ## Instalar y configurar node exporter.
+
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+
+sha256sum node_exporter-1.6.1.linux-amd64.tar.gz
+
+tar xvf node_exporter-1.6.1.linux-amd64.tar.gz
+
+cp node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin/
+
+sudo useradd -rs --create-home /nonexistent /bin/false node_exporter
+
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+
+sudo nano /etc/systemd/system/node_exporter.service
+
+### contenido del archivo node_exporter.service
+
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+
+### recargar los servicios
+
+sudo systemctl daemon-reload
+
+### iniciar el servicio
+
+sudo systemctl start node_exporter
+sudo systemctl status node_exporter
+
+### activar el servicio
+
+sudo systemctl enable node_exporter
+
+### Links
+
+https://github.com/prometheus/node_exporter
+https://prometheus.io/docs/guides/node-exporter/
+https://prometheus.io/download/
+
+### configurar prometheus con el exporter.
+
+sudo nano /etc/prometheus/prometheus.yml
+
+### agregar el siguiente contenido al archivo de configuracion prometheus.yml
+
+- job_name: 'node_exporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.1.13:9100']
+
+### reiniciar el servicio de prometheus.
+
+sudo systemctl restart prometheus
+sudo systemctl status prometheus
+
+
+## Instalar jenkins
+
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+    https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+    /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt update
+
+sudo apt install jenkins
+
+sudo systemctl start jenkins.service
+
+sudo systemctl status jenkins
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+sudo apt install openjdk-17-jre
+
+
+## prueba de carga apache benchmark
+
+sudo apt install apache2-utils
+
+ab -n 1000 -c 100 http://wordpress.educacionit.local
+
+https://httpd.apache.org/docs/2.4/programs/ab.html
