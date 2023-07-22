@@ -197,11 +197,13 @@ sudo systemctl start jenkins.service
 
 sudo systemctl status jenkins
 
+### Acceder a la interfaz web de jenkins para configuralo.
+
+### obtener el password de jenkins
+
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 sudo apt install openjdk-17-jre
-
-
 ## prueba de carga apache benchmark
 
 sudo apt install apache2-utils
