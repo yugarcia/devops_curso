@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM checkout') {
             steps {
-                git branch: 'master', url: ''
+                git branch: 'master', url: 'https://github.com/edgaregonzalez/devops-63703.git'
             }
         }
 
