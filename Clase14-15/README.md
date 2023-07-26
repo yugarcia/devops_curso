@@ -208,7 +208,7 @@ sudo apt install openjdk-17-jre
 ### En caso de fallo
 Si encuentran una falla cuando intentan iniciar el servicio de jenkins reinicien la VM.
 
-### instalar sshpass
+### instalar sshpass es necesario para ejecutar ansible desde jenkins.
 apt-get install sshpass
 ## prueba de carga apache benchmark
 
