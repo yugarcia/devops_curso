@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Execute ansible') {
             steps {
-                sh "ls -alh"
                 sh "ansible-playbook -i ./Clase12-13/inventory.ini ./Clase12-13/main.yml"
                 
             }
