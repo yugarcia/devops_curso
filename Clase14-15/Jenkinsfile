@@ -9,7 +9,7 @@ pipeline {
 
         stage('Execute ansible') {
             steps {
-                ansiblePlaybook colorized: true, installation: 'ansible', inventory: 'hosts', playbook: 'playbook.yml'
+                sh "ansible-playbook --version"
             }
         }
     }
