@@ -6,14 +6,11 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/edgaregonzalez/devops-63703.git'
             }
         }
-        stage('cambio de directorio de trabajo') {
-            steps {
-                sh "cd Clase12-13"
-            }
-        }
         stage('Execute ansible') {
             steps {
-                sh "ansible-playbook -i inventory.ini main.yml"
+                sh "ls -alh"
+                sh "ansible-playbook -i ./Clase12-13/inventory.ini ./Clase12-13/main.yml"
+                
             }
         }
     }

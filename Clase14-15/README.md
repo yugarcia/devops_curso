@@ -207,6 +207,9 @@ sudo apt install openjdk-17-jre
 
 ### En caso de fallo
 Si encuentran una falla cuando intentan iniciar el servicio de jenkins reinicien la VM.
+
+### instalar sshpass
+apt-get install sshpass
 ## prueba de carga apache benchmark
 
 sudo apt install apache2-utils
