@@ -9,6 +9,8 @@
 * Mantener el repositorio actualizado de forma local.
 * Tener instalado en su maquina VSCode y terraform. [Como instalar Terraform](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase17/terraform/)
 * Leer el desafio propuesto, si hay dudas traiganlo a la clase que viene.
+## Servicios free tier AWS
+[free tier site](https://aws.amazon.com/es/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 
 
 ## Instalar el cliente de aws
