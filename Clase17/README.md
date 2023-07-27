@@ -1,5 +1,16 @@
 # Clase 17 -- Servicios de AWS [s3, ec2 ]
 
+# Para la proxima clase:
+
+* Crear una cuenta gratuita de AWS.
+* Crear un usuario de IAM con permisos de administrador.
+* Crear una llave de acceso para el usuario de IAM. (traten esta llave como si fuera su contraseña)
+* Configurar las credenciales de aws (aws configure).
+* Mantener el repositorio actualizado de forma local.
+* Tener instalado en su maquina VSCode y terraform. [Como instalar Terraform](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase17/terraform/)
+* Leer el desafio propuesto, si hay dudas traiganlo a la clase que viene.
+
+
 ## Instalar el cliente de aws
 
 ### Linux
@@ -65,3 +76,6 @@ aws ec2 run-instances --image-id ami-0dc2d3e4c0f9ebd18 --instance-type t2.micro 
 ```bash
 aws ec2 describe-instances
 ```
+
+
+

@@ -21,6 +21,10 @@ The repository is organized into folders, with each folder representing a meetin
 - [2023-06-28 Meeting 10 - Intro Bash Scripting - Funciones](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase10)
 - [2023-05-07 Meeting 11 - Instalacion y configuracion de base de datos](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase11)
 - [2023-05-07 Meeting 12-13 - Instalacion y configuracion de wordpress con ansible](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase12-13)
+- [2023-07-19 Meeting 14-15 - Pipeline Jenkins](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase14-15)
+- [2023-07-21 Meeting 16 - Introduccion y conceptos basicos Cloud Computing](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase16)
+- [2023-07-21 Meeting 17 - Servicios S3 y EC2 AWS](https://github.com/edgaregonzalez/devops-63703/tree/master/Clase17)
+
 
 ## Usage
 
