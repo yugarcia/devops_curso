@@ -14,6 +14,11 @@ Para poder generar las credenciales de AWS debe ingresar a su cuenta de AWS y di
 ```bash	
 aws configure
 ```
+### Configurar variables de entorno para autenticar el provider.
+```bash
+export AWS_ACCESS_KEY_ID="AKIAJQY3ZG..."
+export AWS_SECRET_ACCESS_KEY="5Z4Z3......"
+```
 ### Ejecutar terraform
 
 ```bash
@@ -25,3 +30,7 @@ terraform plan --out plan.out
 ```bash
 terraform apply
 ```
+
+### Documentacion de terraform para AWS
+[Provider AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+[Modulos AWS](https://registry.terraform.io/browse/modules?provider=aws&verified=true)
