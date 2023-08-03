@@ -12,7 +12,6 @@
 ## Servicios free tier AWS
 [free tier site](https://aws.amazon.com/es/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 
-
 ## Instalar el cliente de aws
 
 ### Linux
@@ -78,6 +77,3 @@ aws ec2 run-instances --image-id ami-0dc2d3e4c0f9ebd18 --instance-type t2.micro 
 ```bash
 aws ec2 describe-instances
 ```
-
-
-
