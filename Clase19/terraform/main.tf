@@ -10,7 +10,16 @@ terraform {
 provider "aws" {
     region = "us-east-1"
 }
-
+resource "aws_eip" "wordpress-eip" {
+    tags = {
+        Name="wordpress-eip"
+        OWNER="edgaregonzalez@gmail.com"
+    }
+}
+resource "aws_eip_association" "serverwindows-eip" {
+    instance_id = aws_instance.serverwindows.id
+    allocation_id = aws_eip.wordpress-eip.id
+}
 resource "aws_security_group" "serverwindows-sg" {
     name = "serverwindows-rdp-sg"
     description = "acceso remoto para administracion del equipo"
@@ -33,9 +42,10 @@ resource "aws_instance" "serverwindows" {
     ami = "ami-0fc682b2a42e57ca2"
     instance_type = "t2.micro"
     key_name = "devops-educacionit"
-    associate_public_ip_address = true
+    associate_public_ip_address = false
     vpc_security_group_ids = [aws_security_group.serverwindows-sg.id]
     subnet_id = "subnet-00aed494d19efbf81"
+
     tags = {
         Name="serverwindows"
         OWNER="edgaregonzalez@gmail.com"
