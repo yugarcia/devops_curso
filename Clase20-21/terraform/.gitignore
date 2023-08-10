@@ -1,5 +1,3 @@
-.vagrant/
-# terraform ignore files
 # Local .terraform directories
 **/.terraform/*
 
@@ -35,4 +33,3 @@ override.tf.json
 .terraformrc
 terraform.rc
 *.plan
-*/terraform/networking/.terraform.lock.hcl
