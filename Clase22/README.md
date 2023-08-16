@@ -1,0 +1,1 @@
+En esta clase vimos el contenido teorico sobre los balancedores de carga y hicimos una demos tracion de como crear uno.

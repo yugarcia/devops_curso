@@ -22,6 +22,7 @@ variable "resource_tags" {
     default = {
         Terraform = "true"
         Environment = "dev"
-        OWNER = "DevOps"
+        OWNER = "no-owner"
+
     }
 }
