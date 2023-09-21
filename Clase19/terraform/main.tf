@@ -13,7 +13,7 @@ provider "aws" {
 resource "aws_eip" "wordpress-eip" {
     tags = {
         Name="wordpress-eip"
-        OWNER="edgaregonzalez@gmail.com"
+        OWNER="yugarcia@geocom.com.uy"
     }
 }
 resource "aws_eip_association" "serverwindows-eip" {
@@ -28,7 +28,7 @@ resource "aws_security_group" "serverwindows-sg" {
         from_port = 3389
         to_port = 3389
         protocol = "tcp"
-        cidr_blocks = ["200.117.89.71/32"]
+        cidr_blocks = ["3.132.215.57/32"]
     }
 egress {
     from_port        = 0
